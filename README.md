@@ -79,7 +79,8 @@ function renderItem(item) {
 
 ## Running the example
 
-There is an example project you can run which support orientation changes
+There is an example project you can run which support orientation changes.
+You can view the browser version [here](http://ranger.mauve.moe/react-native-square-grid/example/SquareGridExample/build/)
 
 - clone this repo
 - cd into `example/SquareGridExample`
