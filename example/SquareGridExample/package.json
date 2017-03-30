@@ -1,0 +1,28 @@
+{
+  "name": "SquareGridExample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "setup": "cpy ../../index.js ./node_modules/react-native-square-grid",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start-web": "./node_modules/.bin/react-scripts start",
+		"build-web": "./node_modules/.bin/react-scripts build",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "15.4.2",
+    "react-native": "0.42.3"
+  },
+  "devDependencies": {
+    "babel-jest": "19.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "cpy-cli": "^1.0.1",
+    "jest": "19.0.2",
+    "react-native-web": "0.0.80",
+    "react-scripts-native": "^0.9.1",
+    "react-test-renderer": "15.4.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

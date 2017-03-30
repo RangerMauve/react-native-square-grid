@@ -1,0 +1,3 @@
+rootProject.name = 'SquareGridExample'
+
+include ':app'

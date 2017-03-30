@@ -1,0 +1,45 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-native/all"
+  ],
+  "plugins": [
+    "react",
+    "react-native"
+  ],
+  "env": {
+    "shared-node-browser": true
+  },
+  "rules": {
+    "no-undef": 2,
+    "no-unused-vars": 2,
+    "strict": [2, "global"],
+    "new-cap": 0,
+    "indent": ["error", "tab", {"MemberExpression": 1, "ArrayExpression": 1, "ObjectExpression": 1 }],
+    "no-console": 0,
+    "no-invalid-this": 0,
+    "no-trailing-spaces": 2,
+    "semi": ["error", "always"],
+    "key-spacing": ["warn", { "beforeColon": false, "afterColon": true }],
+    "space-infix-ops": ["warn"],
+    "object-curly-newline": ["warn", {"minProperties": 1}],
+    "no-shadow": ["error"],
+    "no-undef-init": ["error"],
+    "react-native/no-color-literals": 0,
+    "react/prop-types": 0,
+    "react/jsx-indent": ["error", "tab"],
+    "react/jsx-wrap-multilines": ["warn"],
+    "react/jsx-equals-spacing": ["warn", "never"],
+    "react/jsx-no-duplicate-props": ["error"],
+    "react/jsx-space-before-closing": ["warn", "always"],
+    "react/jsx-no-comment-textnodes": ["warn"]
+  },
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+   }
+  }
+}
