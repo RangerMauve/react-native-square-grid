@@ -2,6 +2,7 @@
   "name": "SquareGridExample",
   "version": "0.0.1",
   "private": true,
+  "homepage": "./",
   "scripts": {
     "setup": "cpy ../../index.js ./node_modules/react-native-square-grid",
     "start": "node node_modules/react-native/local-cli/cli.js start",
