@@ -88,13 +88,11 @@ export default class SquareGrid extends Component {
 		});
 
 		if(isScrolling) return (
-			<View style={styles.scrollContainer} onLayout={this._handleLayout}>
-				<ScrollView>
-					<View style={styles.gridContainer}>
-						{renderedItems}
-					</View>
-				</ScrollView>
-			</View>
+			<ScrollView style={styles.scrollContainer}>
+				<View style={styles.gridContainer} onLayout={this._handleLayout}>
+					{renderedItems}
+				</View>
+			</ScrollView>
 		);
 
 		return (
