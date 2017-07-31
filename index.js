@@ -12,6 +12,9 @@ var styles = StyleSheet.create({
 		flexWrap: "wrap",
 		flexDirection: "row"
 	},
+	scrollContainer: {
+		flex: 1
+	}
 });
 
 export default class SquareGrid extends Component {
@@ -85,7 +88,7 @@ export default class SquareGrid extends Component {
 		});
 
 		if(isScrolling) return (
-			<View onLayout={this._handleLayout}>
+			<View style={styles.scrollContainer} onLayout={this._handleLayout}>
 				<ScrollView>
 					<View style={styles.gridContainer}>
 						{renderedItems}
