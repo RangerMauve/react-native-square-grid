@@ -1,6 +1,6 @@
 {
   "name": "react-native-square-grid",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A component for rendering a grid of squares that perfectly fill your space (potentially with scrolling)",
   "main": "index.js",
   "scripts": {
@@ -32,5 +32,8 @@
     "eslint": "^3.18.0",
     "eslint-plugin-react": "^6.10.3",
     "eslint-plugin-react-native": "^2.3.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0"
   }
 }
