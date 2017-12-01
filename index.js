@@ -82,7 +82,7 @@ export default class SquareGrid extends Component {
 
 		var renderedItems = toRender.map(function(item, index){
 			return (
-				<View style={itemStyle}>
+				<View key={index} style={itemStyle}>
 					{renderItem(item, index)}
 				</View>
 			);
