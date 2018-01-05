@@ -72,7 +72,7 @@ export default class SquareGridExample extends Component {
 
 		return (
 			<View style={styles.container} onLayout={this._handleLayout}>
-				<SquareGrid rows={rows} columns={columns} items={NUMBERS} renderItem={renderItem} />
+				<SquareGrid spaghetti="meatballs" rows={rows} columns={columns} items={NUMBERS} renderItem={renderItem} />
 			</View>
 		);
 	}

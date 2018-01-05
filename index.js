@@ -31,17 +31,21 @@ export default class SquareGrid extends Component {
 	}
 
 	render() {
-		var props = this.props;
 		var state = this.state;
+
+		var {
+			items,
+			renderItem,
+			rows,
+			columns,
+			...otherProps
+		} = this.props;
 
 		var width = state.width;
 		var height = state.height;
 
-		var items = props.items;
-		var renderItem = props.renderItem;
-
-		var rows = props.rows || 0;
-		var columns = props.columns || 0;
+		rows = rows || 0;
+		columns = columns || 0;
 
 		if(!rows && !columns) {
 			console.error("Must specify number of rows or columns");
