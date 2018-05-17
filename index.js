@@ -34,8 +34,8 @@ export default class SquareGrid extends Component {
 		var props = this.props;
 		var state = this.state;
 
-		var width = state.width;
-		var height = state.height;
+		var width = state.width - 2;
+		var height = state.height - 2;
 
 		var items = props.items;
 		var renderItem = props.renderItem;
@@ -57,16 +57,15 @@ export default class SquareGrid extends Component {
 
 		var isScrolling = !rows;
 
-		if(isScrolling){
-			size = makeEven(width / columns);
+		if(isScrolling) {
+			size = Math.floor(width / columns);
 		} else {
-			var columnSize = makeEven(width / columns);
-			var rowSize = makeEven(height / rows);
+			size = Math.min(width / columns, height / rows);
 
-			size = Math.min(columnSize, rowSize);
+			marginHorizontal = Math.floor((width - (size * columns)) / (2 * columns));
+			marginVertical = Math.floor((height - (size * rows)) / (2 * rows));
 
-			marginHorizontal = makeEven(((width / columns) - size) / 2);
-			marginVertical = makeEven(((height / rows) - size) / 2);
+			size = Math.floor(size);
 		}
 
 		var itemStyle = {
@@ -102,10 +101,6 @@ export default class SquareGrid extends Component {
 			</View>
 		);
 	}
-}
-
-function makeEven(n) {
-	return n - (n % 2);
 }
 
 SquareGrid.propTypes = {
