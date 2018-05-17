@@ -1,6 +1,6 @@
 {
   "name": "react-native-square-grid",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A component for rendering a grid of squares that perfectly fill your space (potentially with scrolling)",
   "main": "index.js",
   "scripts": {
